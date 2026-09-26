@@ -1,5 +1,4 @@
 import SwiftUI
-import AppFoundation
 
 #if canImport(UIKit)
 import UIKit
