@@ -10,3 +10,5 @@ xcodebuild -project MaxLab.xcodeproj -scheme MaxLab -destination 'generic/platfo
 ```
 
 MaxLab uses `gamefy://` and `reset://`; it does not embed, sync or inspect the other apps.
+
+The shared App Lab workspace can open this project alongside Gamefy and Reset. MaxLab has no Foundation package dependency; its views use its own `LabTokens`. The shared scheme includes the launcher UI smoke test in `Tests/MaxLabUITests`.
