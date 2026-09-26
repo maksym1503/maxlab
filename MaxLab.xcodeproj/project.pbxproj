@@ -3,91 +3,328 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A00000000000000000000004 /* MaxLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000014 /* MaxLabApp.swift */; };
-		B00000000000000000000080 = {isa = PBXBuildFile; fileRef = A00000000000000000000080; };
-		B00000000000000000000081 = {isa = PBXBuildFile; fileRef = A00000000000000000000081; };
-		B00000000000000000000082 = {isa = PBXBuildFile; fileRef = A00000000000000000000082; };
-		B00000000000000000000083 = {isa = PBXBuildFile; fileRef = A00000000000000000000083; };
-		B00000000000000000000090 = {isa = PBXBuildFile; productRef = C00000000000000000000090; };
-		B00000000000000000000091 = {isa = PBXBuildFile; productRef = C00000000000000000000091; };
-		E00000000000000000000001 = {isa = PBXBuildFile; fileRef = E00000000000000000000002; };
-		A00000000000000000000005 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000017; };
+		F99B52AE7F1C7C549C273EC9 /* Sources/MaxLabApp/MaxLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9BA3EC3EE7DDE01309C63 /* Sources/MaxLabApp/MaxLabApp.swift */; };
+		FC6F7BAAF566CE837CCCA5F6 /* Sources/MaxLabApp/WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2584848FD1FA9A9B67BBBB /* Sources/MaxLabApp/WelcomeView.swift */; };
+		DCCD66D8DDCBBAE912D35977 /* Sources/MaxLabApp/TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678C315190CD2F10F42CB026 /* Sources/MaxLabApp/TodayView.swift */; };
+		E95667A4E1CB8A3AD5722CFE /* Sources/MaxLabApp/HabitComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5F60C38D83721475D1535 /* Sources/MaxLabApp/HabitComponents.swift */; };
+		5FD808F5BC982502CFE99B62 /* Sources/MaxLabApp/ProgressViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0435F9AF76A67CA8131439 /* Sources/MaxLabApp/ProgressViewScreen.swift */; };
+		9663C2102D31944C5478797D /* Sources/MaxLabApp/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE320ECC864A0F6B2DF93E58 /* Sources/MaxLabApp/SettingsView.swift */; };
+		89E09A466C855A8ACB2C801A /* Tests/MaxLabUITests/MaxLabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82983615515BF32B89F026B /* Tests/MaxLabUITests/MaxLabUITests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		391EF4810586BDD9E144E122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDF7A327CB3E2C78851D7BE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 793D20030C29E10419371595;
+			remoteInfo = MaxLab;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		A00000000000000000000010 /* MaxLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaxLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A00000000000000000000011 /* FoundationTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationTokens.swift; sourceTree = "<group>"; };
-		A00000000000000000000012 /* MaxLabCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLabCore.swift; sourceTree = "<group>"; };
-		A00000000000000000000014 /* MaxLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MaxLabApp/MaxLabApp.swift; sourceTree = SOURCE_ROOT; };
-		A00000000000000000000015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MaxLabInfo.plist; sourceTree = SOURCE_ROOT; };
-		A00000000000000000000017 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MaxLabApp/WelcomeView.swift; sourceTree = SOURCE_ROOT; };
-		A00000000000000000000016 /* MaxLab.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text; path = MaxLab.xcscheme; sourceTree = "<group>"; };
-		A00000000000000000000080 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MaxLabApp/TodayView.swift; sourceTree = SOURCE_ROOT; };
-		A00000000000000000000081 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MaxLabApp/HabitComponents.swift; sourceTree = SOURCE_ROOT; };
-		A00000000000000000000082 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MaxLabApp/ProgressViewScreen.swift; sourceTree = SOURCE_ROOT; };
-		A00000000000000000000083 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MaxLabApp/SettingsView.swift; sourceTree = SOURCE_ROOT; };
-		E00000000000000000000002 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tests/MaxLabUITests/MaxLabUITests.swift; sourceTree = SOURCE_ROOT; };
-		E00000000000000000000003 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = MaxLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		950621955D43DE9C3B17A2FE /* MaxLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaxLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F9BA3EC3EE7DDE01309C63 /* Sources/MaxLabApp/MaxLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MaxLabApp/MaxLabApp.swift; sourceTree = SOURCE_ROOT; };
+		7C1E80C5954EED294963E20C /* MaxLabInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MaxLabInfo.plist; sourceTree = SOURCE_ROOT; };
+		E4720F8E716AD3A873A83469 /* MaxLab.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text; path = MaxLab.xcscheme; sourceTree = "<group>"; };
+		DD2584848FD1FA9A9B67BBBB /* Sources/MaxLabApp/WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MaxLabApp/WelcomeView.swift; sourceTree = SOURCE_ROOT; };
+		678C315190CD2F10F42CB026 /* Sources/MaxLabApp/TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MaxLabApp/TodayView.swift; sourceTree = SOURCE_ROOT; };
+		0AE5F60C38D83721475D1535 /* Sources/MaxLabApp/HabitComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MaxLabApp/HabitComponents.swift; sourceTree = SOURCE_ROOT; };
+		BA0435F9AF76A67CA8131439 /* Sources/MaxLabApp/ProgressViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MaxLabApp/ProgressViewScreen.swift; sourceTree = SOURCE_ROOT; };
+		EE320ECC864A0F6B2DF93E58 /* Sources/MaxLabApp/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MaxLabApp/SettingsView.swift; sourceTree = SOURCE_ROOT; };
+		B82983615515BF32B89F026B /* Tests/MaxLabUITests/MaxLabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests/MaxLabUITests/MaxLabUITests.swift; sourceTree = SOURCE_ROOT; };
+		BCBB963C1ADEB297567A9CC7 /* MaxLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = MaxLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A00000000000000000000020 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (B00000000000000000000090); runOnlyForDeploymentPostprocessing = 0; };
+		71B43D70EEA4673F530F7972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A00000000000000000000030 = {isa = PBXGroup; children = (E00000000000000000000002, A00000000000000000000031, A00000000000000000000032, A00000000000000000000033, A00000000000000000000034, A00000000000000000000035); sourceTree = "<group>"; };
-		A00000000000000000000031 /* MaxLab */ = {isa = PBXGroup; children = (A00000000000000000000080, A00000000000000000000081, A00000000000000000000082, A00000000000000000000083, A00000000000000000000014, A00000000000000000000015); path = MaxLab; sourceTree = "<group>"; };
-		A00000000000000000000032 /* AppFoundation */ = {isa = PBXGroup; children = (A00000000000000000000011); path = Sources/AppFoundation; sourceTree = "<group>"; };
-		A00000000000000000000033 /* MaxLabCore */ = {isa = PBXGroup; children = (A00000000000000000000012); path = Sources/MaxLabCore; sourceTree = "<group>"; };
-		A00000000000000000000034 /* Products */ = {isa = PBXGroup; children = (A00000000000000000000010, E00000000000000000000003); name = Products; sourceTree = "<group>"; };
-		A00000000000000000000035 /* Schemes */ = {isa = PBXGroup; children = (A00000000000000000000016); path = MaxLab.xcodeproj/xcshareddata/xcschemes; sourceTree = "<group>"; };
+		7C163AD4D74E44D886DD465E = {
+			isa = PBXGroup;
+			children = (
+				B82983615515BF32B89F026B /* Tests/MaxLabUITests/MaxLabUITests.swift */,
+				87695B3636B4E983F773EF34 /* MaxLab */,
+				5B63D0D4842CFB538BF75810 /* Products */,
+				F22C75F034B728B06552DF11 /* MaxLab.xcodeproj/xcshareddata/xcschemes */,
+			);
+			sourceTree = "<group>";
+		};
+		87695B3636B4E983F773EF34 /* MaxLab */ = {
+			isa = PBXGroup;
+			children = (
+				678C315190CD2F10F42CB026 /* Sources/MaxLabApp/TodayView.swift */,
+				0AE5F60C38D83721475D1535 /* Sources/MaxLabApp/HabitComponents.swift */,
+				BA0435F9AF76A67CA8131439 /* Sources/MaxLabApp/ProgressViewScreen.swift */,
+				EE320ECC864A0F6B2DF93E58 /* Sources/MaxLabApp/SettingsView.swift */,
+				50F9BA3EC3EE7DDE01309C63 /* Sources/MaxLabApp/MaxLabApp.swift */,
+				DD2584848FD1FA9A9B67BBBB /* Sources/MaxLabApp/WelcomeView.swift */,
+				7C1E80C5954EED294963E20C /* MaxLabInfo.plist */,
+			);
+			name = MaxLab;
+			sourceTree = "<group>";
+		};
+		5B63D0D4842CFB538BF75810 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				950621955D43DE9C3B17A2FE /* MaxLab.app */,
+				BCBB963C1ADEB297567A9CC7 /* MaxLabUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F22C75F034B728B06552DF11 /* MaxLab.xcodeproj/xcshareddata/xcschemes */ = {
+			isa = PBXGroup;
+			children = (
+				E4720F8E716AD3A873A83469 /* MaxLab.xcscheme */,
+			);
+			path = MaxLab.xcodeproj/xcshareddata/xcschemes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A00000000000000000000040 /* MaxLab */ = {isa = PBXNativeTarget; buildConfigurationList = A00000000000000000000060 /* Build configuration list for PBXNativeTarget "MaxLab" */; buildPhases = (A00000000000000000000041, A00000000000000000000020, A00000000000000000000042); buildRules = (); dependencies = (); name = MaxLab; packageProductDependencies = (C00000000000000000000090); productName = MaxLab; productReference = A00000000000000000000010 /* MaxLab.app */; productType = "com.apple.product-type.application"; };
-		E00000000000000000000004 = {isa = PBXNativeTarget; buildConfigurationList = E00000000000000000000005; buildPhases = (E00000000000000000000006); buildRules = (); dependencies = (E00000000000000000000007); name = MaxLabUITests; productName = MaxLabUITests; productReference = E00000000000000000000003; productType = "com.apple.product-type.bundle.ui-testing"; };
+		793D20030C29E10419371595 /* MaxLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08060A8648D7929ED5EBFB11 /* Build configuration list for PBXNativeTarget "MaxLab" */;
+			buildPhases = (
+				20111C20ABB9CBA14C22369F /* Sources */,
+				71B43D70EEA4673F530F7972 /* Frameworks */,
+				CE8515CB6C1F539621249D6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaxLab;
+			packageProductDependencies = (
+			);
+			productName = MaxLab;
+			productReference = 950621955D43DE9C3B17A2FE /* MaxLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E46E5F4209844D42706A9BF9 /* MaxLabUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 469997A0467B7EC30F74A461 /* Build configuration list for PBXNativeTarget "MaxLabUITests" */;
+			buildPhases = (
+				5BAF185832743B19FEB7A93A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3D9D5478E237642E6819448 /* PBXTargetDependency */,
+			);
+			name = MaxLabUITests;
+			productName = MaxLabUITests;
+			productReference = BCBB963C1ADEB297567A9CC7 /* MaxLabUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
-		E00000000000000000000006 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (E00000000000000000000001); runOnlyForDeploymentPostprocessing = 0; };
-		E00000000000000000000007 = {isa = PBXTargetDependency; target = A00000000000000000000040; targetProxy = E00000000000000000000008; };
-		E00000000000000000000008 = {isa = PBXContainerItemProxy; containerPortal = A00000000000000000000050; proxyType = 1; remoteGlobalIDString = A00000000000000000000040; remoteInfo = MaxLab; };
-		E00000000000000000000005 = {isa = XCConfigurationList; buildConfigurations = (E00000000000000000000009, E00000000000000000000010); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-		E00000000000000000000009 = {isa = XCBuildConfiguration; buildSettings = {GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.maxlab.app.uitests; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_VERSION = 5.9; TARGETED_DEVICE_FAMILY = 1; TEST_TARGET_NAME = MaxLab; }; name = Debug; };
-		E00000000000000000000010 = {isa = XCBuildConfiguration; buildSettings = {GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.maxlab.app.uitests; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_VERSION = 5.9; TARGETED_DEVICE_FAMILY = 1; TEST_TARGET_NAME = MaxLab; }; name = Release; };
 
 /* Begin PBXProject section */
-		A00000000000000000000050 /* Project object */ = {isa = PBXProject; attributes = {LastUpgradeCheck = 2660; TargetAttributes = {A00000000000000000000040 = {CreatedOnToolsVersion = 26.6; }; }; }; buildConfigurationList = A00000000000000000000070 /* Build configuration list for PBXProject "MaxLab" */; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = A00000000000000000000030; productRefGroup = A00000000000000000000034 /* Products */; packageReferences = (D00000000000000000000090); projectDirPath = ""; projectRoot = ""; targets = (A00000000000000000000040 /* MaxLab */, E00000000000000000000004); };
+		CDF7A327CB3E2C78851D7BE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					793D20030C29E10419371595 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = 567866703082667770DC039D /* Build configuration list for PBXProject "MaxLab" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C163AD4D74E44D886DD465E;
+			packageReferences = (
+			);
+			productRefGroup = 5B63D0D4842CFB538BF75810 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				793D20030C29E10419371595 /* MaxLab */,
+				E46E5F4209844D42706A9BF9 /* MaxLabUITests */,
+			);
+		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A00000000000000000000042 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		CE8515CB6C1F539621249D6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A00000000000000000000041 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000004, A00000000000000000000005, B00000000000000000000083, B00000000000000000000082, B00000000000000000000081, B00000000000000000000080); runOnlyForDeploymentPostprocessing = 0; };
+		20111C20ABB9CBA14C22369F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99B52AE7F1C7C549C273EC9 /* Sources/MaxLabApp/MaxLabApp.swift in Sources */,
+				FC6F7BAAF566CE837CCCA5F6 /* Sources/MaxLabApp/WelcomeView.swift in Sources */,
+				9663C2102D31944C5478797D /* Sources/MaxLabApp/SettingsView.swift in Sources */,
+				5FD808F5BC982502CFE99B62 /* Sources/MaxLabApp/ProgressViewScreen.swift in Sources */,
+				E95667A4E1CB8A3AD5722CFE /* Sources/MaxLabApp/HabitComponents.swift in Sources */,
+				DCCD66D8DDCBBAE912D35977 /* Sources/MaxLabApp/TodayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BAF185832743B19FEB7A93A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E09A466C855A8ACB2C801A /* Tests/MaxLabUITests/MaxLabUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		D00000000000000000000090 = {isa = XCLocalSwiftPackageReference; relativePath = .; };
-/* End XCLocalSwiftPackageReference section */
-/* Begin XCSwiftPackageProductDependency section */
-		C00000000000000000000090 = {isa = XCSwiftPackageProductDependency; productName = AppFoundation; };
-/* End XCSwiftPackageProductDependency section */
+/* Begin PBXTargetDependency section */
+		B3D9D5478E237642E6819448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 793D20030C29E10419371595 /* MaxLab */;
+			targetProxy = 391EF4810586BDD9E144E122 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A00000000000000000000071 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CURRENT_PROJECT_VERSION = 2; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = MaxLabInfo.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.maxlab.app; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_VERSION = 5.9; TARGETED_DEVICE_FAMILY = 1; }; name = Debug; };
-		A00000000000000000000072 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CURRENT_PROJECT_VERSION = 2; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = MaxLabInfo.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.maxlab.app; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_VERSION = 5.9; TARGETED_DEVICE_FAMILY = 1; }; name = Release; };
-		A00000000000000000000073 /* Project Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; ONLY_ACTIVE_ARCH = YES; }; name = Debug; };
-		A00000000000000000000074 /* Project Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; }; name = Release; };
+		67C29F59892A2FDE46387263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MaxLabInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxlab.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		360BB635605C30184BF42B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MaxLabInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxlab.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CB6D88C915D5009983701105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01D034B9CF93F4C6E339F266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5542F8D75116978C73978A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxlab.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = MaxLab;
+			};
+			name = Debug;
+		};
+		A8FDF11C31F2880174BD4843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxlab.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = MaxLab;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A00000000000000000000060 /* Build configuration list for PBXNativeTarget "MaxLab" */ = {isa = XCConfigurationList; buildConfigurations = (A00000000000000000000071, A00000000000000000000072); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-		A00000000000000000000070 /* Build configuration list for PBXProject "MaxLab" */ = {isa = XCConfigurationList; buildConfigurations = (A00000000000000000000073, A00000000000000000000074); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		08060A8648D7929ED5EBFB11 /* Build configuration list for PBXNativeTarget "MaxLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C29F59892A2FDE46387263 /* Debug */,
+				360BB635605C30184BF42B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		567866703082667770DC039D /* Build configuration list for PBXProject "MaxLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6D88C915D5009983701105 /* Debug */,
+				01D034B9CF93F4C6E339F266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		469997A0467B7EC30F74A461 /* Build configuration list for PBXNativeTarget "MaxLabUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5542F8D75116978C73978A31 /* Debug */,
+				A8FDF11C31F2880174BD4843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = A00000000000000000000050 /* Project object */;
+	rootObject = CDF7A327CB3E2C78851D7BE0 /* Project object */;
 }
