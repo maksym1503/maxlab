@@ -4,6 +4,7 @@ struct AppCard: View {
     let app: LabApp
     let action: () -> Void
     @Environment(\.dynamicTypeSize) private var typeSize
+    @State private var pressed = false
     var body: some View {
         Button(action: action) {
             VStack(alignment: .leading, spacing: 16) {
@@ -31,6 +32,9 @@ struct AppCard: View {
             .overlay { RoundedRectangle(cornerRadius: 22).strokeBorder(app.accent.opacity(0.24), lineWidth: 1.5) }
         }
         .buttonStyle(.plain)
+        .scaleEffect(pressed ? 0.985 : 1)
+        .animation(.spring(response: 0.25, dampingFraction: 0.78), value: pressed)
+        .simultaneousGesture(LongPressGesture(minimumDuration: 0.01).onChanged { _ in pressed = true }.onEnded { _ in pressed = false })
         .accessibilityLabel("\(app.name), \(app.purpose), \(app.available ? "installed" : "unavailable")")
         .accessibilityHint("Show app details")
     }
