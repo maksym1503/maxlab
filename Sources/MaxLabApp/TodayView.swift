@@ -27,8 +27,8 @@ struct AppCard: View {
                     .multilineTextAlignment(.leading).fixedSize(horizontal: false, vertical: true)
             }
             .frame(maxWidth: .infinity, alignment: .leading).padding(20)
-            .background(LabTokens.surface, in: RoundedRectangle(cornerRadius: 22))
-            .overlay { RoundedRectangle(cornerRadius: 22).strokeBorder(Color.primary.opacity(0.08), lineWidth: 1) }
+            .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 22))
+            .overlay { RoundedRectangle(cornerRadius: 22).strokeBorder(app.accent.opacity(0.24), lineWidth: 1.5) }
         }
         .buttonStyle(.plain)
         .accessibilityLabel("\(app.name), \(app.purpose), \(app.available ? "installed" : "unavailable")")

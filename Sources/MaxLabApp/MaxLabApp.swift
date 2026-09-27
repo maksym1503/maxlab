@@ -22,21 +22,34 @@ struct MaxLabHome: View {
     private let apps = [LabApp(id: "gamefy", name: "Gamefy", purpose: "Make your bed. Grow your room.", scheme: "gamefy://", symbol: "bed.double.fill", accent: .indigo, available: installed("gamefy://")), LabApp(id: "reset", name: "Reset", purpose: "Clear your desk. Clear your mind.", scheme: "reset://", symbol: "arrow.triangle.2.circlepath", accent: .teal, available: installed("reset://"))]
     var body: some View {
         NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text("YOUR PRIVATE APP SHELF").font(.caption.weight(.semibold)).tracking(1.5).foregroundStyle(LabTokens.secondary)
-                        Text("Small apps, made with care.").font(.title2.bold())
-                    }
-                    VStack(spacing: 16) {
-                        ForEach(apps) { app in AppCard(app: app) { selected = app } }
-                    }
-                }.padding(20)
+            ZStack(alignment: .bottom) {
+                StudioBackdrop()
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 24) {
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("YOUR PRIVATE APP SHELF").font(.caption.weight(.semibold)).tracking(1.5).foregroundStyle(LabTokens.secondary)
+                            Text("Small apps, made with care.").font(.title2.bold())
+                        }
+                        VStack(spacing: 18) { ForEach(apps) { app in AppCard(app: app) { selected = app } } }
+                        Text("Two small products, one quiet studio.").font(.footnote).foregroundStyle(LabTokens.secondary).padding(.top, 4)
+                    }.padding(20).padding(.bottom, 30)
+                }
             }
-            .background(LabTokens.background)
             .navigationTitle("MaxLab")
         }
         .sheet(item: $selected) { app in AppLaunchSheet(app: app) { openURL(URL(string: app.scheme)!) } }
+    }
+}
+
+private struct StudioBackdrop: View {
+    var body: some View {
+        GeometryReader { proxy in
+            ZStack(alignment: .bottom) {
+                LinearGradient(colors: [Color.indigo.opacity(0.10), LabTokens.background], startPoint: .top, endPoint: .bottom)
+                VStack(spacing: 0) { Spacer(); Rectangle().fill(Color.brown.opacity(0.16)).frame(height: 130); Rectangle().fill(Color.brown.opacity(0.28)).frame(height: 8) }
+                Circle().fill(Color.yellow.opacity(0.14)).frame(width: 170).blur(radius: 16).offset(x: proxy.size.width * 0.25, y: -proxy.size.height * 0.36)
+            }.ignoresSafeArea()
+        }.allowsHitTesting(false)
     }
 }
 
