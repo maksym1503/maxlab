@@ -13,7 +13,7 @@
 	<key>CFBundleURLTypes</key>
 	<array><dict><key>CFBundleURLSchemes</key><array><string>maxlab</string></array></dict></array>
 	<key>LSApplicationQueriesSchemes</key>
-	<array><string>gamefy</string><string>reset</string></array>
+	<array><string>gamefy</string><string>reset</string><string>veil</string></array>
 	<key>UILaunchScreen</key><dict/>
 </dict>
 </plist>

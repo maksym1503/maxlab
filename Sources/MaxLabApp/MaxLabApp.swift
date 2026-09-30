@@ -19,7 +19,7 @@ private func installed(_ scheme: String) -> Bool {
 struct MaxLabHome: View {
     @Environment(\.openURL) private var openURL
     @State private var selected: LabApp?
-    private let apps = [LabApp(id: "gamefy", name: "Gamefy", purpose: "Make your bed. Grow your room.", scheme: "gamefy://", symbol: "bed.double.fill", accent: .indigo, available: installed("gamefy://")), LabApp(id: "reset", name: "Reset", purpose: "Clear your desk. Clear your mind.", scheme: "reset://", symbol: "arrow.triangle.2.circlepath", accent: .teal, available: installed("reset://"))]
+    private let apps = [LabApp(id: "gamefy", name: "Gamefy", purpose: "Make your bed. Grow your room.", scheme: "gamefy://", symbol: "bed.double.fill", accent: .indigo, available: installed("gamefy://")), LabApp(id: "reset", name: "Reset", purpose: "Clear your desk. Clear your mind.", scheme: "reset://", symbol: "arrow.triangle.2.circlepath", accent: .teal, available: installed("reset://")), LabApp(id: "veil", name: "Veil", purpose: "Hide sensitive details in a photo.", scheme: "veil://", symbol: "eye.slash", accent: .purple, available: installed("veil://"))]
     var body: some View {
         NavigationStack {
             ZStack(alignment: .bottom) {
@@ -31,7 +31,7 @@ struct MaxLabHome: View {
                             Text("Small apps, made with care.").font(.title2.bold())
                         }
                         VStack(spacing: 18) { ForEach(apps) { app in AppCard(app: app) { selected = app } } }
-                        Text("Two small products, one quiet studio.").font(.footnote).foregroundStyle(LabTokens.secondary).padding(.top, 4)
+                        Text("Three small products, one quiet studio.").font(.footnote).foregroundStyle(LabTokens.secondary).padding(.top, 4)
                     }.padding(20).padding(.bottom, 30)
                 }
             }
